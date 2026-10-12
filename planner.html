@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0"><meta name="description" content="Interactive academic task planner."><title>Academic Planner | Academic Portfolio</title><link rel="stylesheet" href="css/style.css"><script src="js/main.js" defer></script><script src="js/planner.js" defer></script></head>
+<body><a class="skip-link" href="#main">Skip to content</a>
+<header class="site-header"><div class="container nav-wrap"><a class="brand" href="index.html"><span class="brand-mark">C</span><span>Chioma<span class="brand-accent">.</span></span></a><button class="menu-toggle" aria-label="Toggle navigation" aria-expanded="false">☰</button><nav class="site-nav" aria-label="Main navigation"><a href="index.html">Home</a><a href="about.html">About Me</a><a href="projects.html">Projects</a><a class="active" href="planner.html">Academic Planner</a><a href="contact.html">Contact</a></nav></div></header>
+<main id="main" class="container page-content">
+  <section class="page-hero"><p class="eyebrow">STAY ORGANISED</p><h1>Academic <span class="gradient-text">planner.</span></h1><p class="lead">Turn your academic goals into manageable steps. Add a task, track your progress, and keep moving.</p></section>
+  <section class="planner-layout">
+    <div class="planner-main panel">
+      <div class="planner-heading"><div><p class="eyebrow">YOUR TASK LIST</p><h2>Tasks to focus on</h2></div><span class="task-count" id="task-count">0 tasks</span></div>
+      <form id="task-form" class="task-form">
+        <label for="task-input">Task description</label><div class="task-input-row"><input id="task-input" name="task" type="text" placeholder="e.g. Review JavaScript notes" maxlength="140" required><button class="btn btn-primary" type="submit">+ Add task</button></div>
+        <p class="form-hint">Tasks are stored in this browser using local storage.</p>
+      </form>
+      <div class="task-filters" role="group" aria-label="Filter tasks"><button class="filter-btn active" type="button" data-filter="all">All</button><button class="filter-btn" type="button" data-filter="active">To do</button><button class="filter-btn" type="button" data-filter="completed">Completed</button></div>
+      <ul id="task-list" class="task-list" aria-live="polite"><li class="empty-state">Loading your tasks…</li></ul>
+      <div class="planner-footer"><span id="progress-label">No tasks yet — add your first task.</span><button type="button" id="clear-completed" class="text-button">Clear completed</button></div>
+    </div>
+    <aside class="planner-aside">
+      <article class="progress-card"><p class="eyebrow">YOUR PROGRESS</p><div class="progress-number"><strong id="completed-number">0</strong><span>completed</span></div><div class="progress-track"><span id="progress-bar"></span></div><p id="progress-detail">Every small step counts.</p></article>
+      <article class="panel tip-card"><span class="feature-icon">✦</span><h3>Study tip</h3><p>Break a large assignment into small tasks. Set a realistic deadline and focus on one thing at a time.</p></article>
+      <article class="panel"><h3>Weekly rhythm</h3><ul class="simple-list"><li>Review lecture notes</li><li>Practise what you learn</li><li>Check upcoming deadlines</li><li>Reflect on progress</li></ul></article>
+    </aside>
+  </section>
+</main><footer class="site-footer"><div class="container footer-inner"><a class="brand footer-brand" href="index.html"><span class="brand-mark">C</span><span>Chioma<span class="brand-accent">.</span></span></a><p>Personal Academic Portfolio</p><p>© <span class="year"></span> Chioma Okafor. Built with HTML, CSS & JavaScript.</p></div></footer></body></html>
